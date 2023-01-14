@@ -1,0 +1,135 @@
+.blue_sky_background {
+  background: linear-gradient(#1f4f9e, #6e8ebe, #859bb2);
+  height: 100vh;
+  /* overflow: hidden; */
+}
+
+.purple_sky_background {
+  background: linear-gradient(#859bb2, #9485d0, #c197dd);
+  height: 160vh;
+}
+
+.row_center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.row_end {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 15rem;
+}
+
+.cloud_overlay {
+  display: grid;
+  grid-template-columns: auto auto; /* grid has two columns; content defines width */
+  justify-content: space-between; /* horizontal alignment of grid tracks */
+  align-content: space-between; /* vertical alignment of grid tracks */
+  width: 100%;
+}
+
+/* move cloud_1 to the top left of the screen */
+.cloud_1 {
+  margin-left: -800px;
+  margin-top: -800px;
+}
+
+/* move cloud_2 to the top right of the screen */
+.cloud_2 {
+  margin-left: -100px;
+  margin-top: -250px;
+}
+
+/* move cloud_3 to the bottom left of the screen */
+.cloud_3 {
+  margin-right: -800px;
+  margin-top: -800px;
+}
+
+/* center title */
+.title {
+  font-size: 9rem;
+  position: absolute;
+  white-space: nowrap;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* center subtitle */
+.title_2 {
+  font-size: 9rem;
+}
+
+.purple_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+  padding-top: 55rem;
+  height: 400px;
+}
+
+@media screen and (max-width: 1366px) {
+  .title {
+    font-size: 6rem;
+  }
+
+  /* move cloud_1 to the top left of the screen */
+  .cloud_1 {
+    margin-left: -800px;
+    margin-top: -800px;
+  }
+
+  /* move cloud_2 to the top right of the screen */
+  .cloud_2 {
+    margin-left: -100px;
+    margin-top: -250px;
+  }
+
+  /* move cloud_3 to the bottom left of the screen */
+  .cloud_3 {
+    margin-right: -800px;
+    margin-top: -800px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 4rem;
+  }
+
+  /* move cloud_1 to the top left of the screen */
+  .cloud_1 {
+    margin-left: -800px;
+    margin-top: -800px;
+  }
+
+  /* move cloud_2 to the top right of the screen */
+  .cloud_2 {
+    margin-left: -100px;
+    margin-top: -250px;
+  }
+
+  /* move cloud_3 to the bottom left of the screen */
+  .cloud_3 {
+    margin-right: -800px;
+    margin-top: -800px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .cloud_overlay {
+    display: grid;
+    grid-template-columns: auto auto; /* grid has two columns; content defines width */
+    justify-content: space-between; /* horizontal alignment of grid tracks */
+    align-content: space-between; /* vertical alignment of grid tracks */
+    width: 100%;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}

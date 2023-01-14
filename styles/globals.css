@@ -1,0 +1,17 @@
+
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+    margin: 0;
+    padding: 0;
+  }
+  /* add helvitica font as the default */
+  body {
+    font-family: Helvetica, Arial, sans-serif;
+  }
+}

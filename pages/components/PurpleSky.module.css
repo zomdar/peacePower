@@ -1,0 +1,40 @@
+.purple_sky_background {
+  background: linear-gradient(#859bb2, #9485d0, #c197dd);
+  height: 160vh;
+}
+
+.row_center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.row_end {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 15rem;
+}
+
+/* center subtitle */
+.title_2 {
+  font-size: 9rem;
+}
+
+.purple_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+  padding-top: 55rem;
+  height: 400px;
+}
+
+@media screen and (max-width: 1366px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 400px) {
+}

@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useScroll } from "react-use-gesture";
 
+import PurpleSky from "./components/PurpleSky";
+
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -53,26 +55,7 @@ export default function Home() {
             PEACE is POWER
           </motion.h1>
         </motion.div>
-        <motion.div className={styles.purple_sky_background}>
-          {/* <div className={styles.cloud_overlay}>
-            <img src="/cloud_1.png" alt="cloud_1" className={styles.cloud_1} />
-            <img src="/cloud_4.png" alt="cloud_3" className={styles.cloud_3} />
-            <img src="/cloud_2.png" alt="cloud_2" className={styles.cloud_2} />
-            <img src="/cloud_3.png" alt="cloud_3" className={styles.cloud_2} />
-          </div> */}
-          <div className={styles.purple_content}>
-            <div className={styles.row_end}>its raining in ny</div>
-
-            <motion.h1
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 2.5 }}
-              className={styles.title_2}
-            >
-              <div className={styles.row_center}>DRINK more WATER</div>
-            </motion.h1>
-          </div>
-        </motion.div>
+        <PurpleSky />
       </>
     </div>
   );
